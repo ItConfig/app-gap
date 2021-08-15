@@ -1,10 +1,10 @@
 openapi: 3.0.3
 info:
   version: 1.0.0
-  title: Example.com
+  title: AppGAP
   termsOfService: 'https://example.com/terms/'
   contact:
-    email: contact@example.com
+    email: oscar@apptitude.com.ar
     url: 'http://example.com/contact'
   license:
     name: Apache 2.0
@@ -13,23 +13,19 @@ info:
     url: 'https://redocly.github.io/openapi-template/logo.png'
   description:
     $ref: ./info-description.md
-externalDocs:
-  description: Find out how to create a GitHub repo for your OpenAPI definition.
-  url: 'https://github.com/Rebilly/generator-openapi-repo'
 tags:
-  - name: Echo
-    description: Example echo operations.
+  - name: Usuario
+    description: Operaciones con el usuario
   - name: User
     description: Operations about users.
   - name: Tag
     description: This is a tag description.
 servers:
-  - url: 'http://example.com/api/v1'
-  - url: 'https://example.com/api/v1'
+  - url: 'http://gap.itlabs.ar/api/v1'
 paths:
   '/users/{username}':
     $ref: 'paths/users@{username}.yaml'
-  /echo:
+  /usuario:
     $ref: paths/echo.yaml
   /pathItem:
     $ref: paths/path-item.yaml
